@@ -29,7 +29,7 @@
 
 <body>
     <div id="root">
-        <ul>
+        <ul v-if="emails.length === 10">
             <li v-for="(email, i) in emails" :key="i">Email: {{email}} </li>
         </ul>
     </div>
