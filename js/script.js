@@ -7,7 +7,7 @@ const app = createApp({
         emails: []
     }),
     created() {
-        for (let i = 0; i <= 10; i++)
+        for (let i = 1; i <= 10; i++)
             axios.get(endpoint).then(res => {
                 this.emails.push(res.data.response)
             })
